@@ -1,7 +1,7 @@
-# Anargya Formula Student Landing Page
+# Anargya Formula Car Landing Page 
 
 Static landing page for the Anargya ITS Indonesia electric Formula Student team.  
-Built with semantic HTML, responsive CSS, and a tiny amount of vanilla JS for the mobile navigation.
+Built with semantic HTML, responsive CSS, and a tiny amount of vanilla JS for the navigation.
 
 ## Project structure
 
