@@ -1,0 +1,340 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anargya Formula Student</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="Index.css" />
+    </head>
+    <body>
+        <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="#hero" aria-label="Anargya homepage">
+          <picture class="brand__mark">
+            <source srcset="assets/images/anargya-logo.jpg" />
+            <img src="assets/images/anargya-logo.svg" alt="Anargya emblem" />
+          </picture>
+            <span class="brand__name"></span>
+            </a>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+            <span class="sr-only">Menu</span>
+            </button>
+            <div class="nav__links" id="primary-navigation">
+            <a href="#about">About</a>
+            <a href="#models">Models</a>
+            <a href="#team">Team</a>
+            <a class="button button--primary" href="#contact">Contact Us</a>
+            </div>
+        </nav>
+        </header>
+
+        <main>
+        <section class="hero" id="hero">
+            <div class="hero__content">
+            <p class="eyebrow">Anargya ITS Indonesia</p>
+            <h1>Engineering Excellence in Motion</h1>
+            <p class="hero__lead">
+                A Formula Student team from Institut Teknologi Sepuluh Nopember, engineering the future
+                of electric performance.
+            </p>
+            <div class="hero__actions">
+                <a class="button button--primary" href="#models">View Models</a>
+                <a class="button button--ghost" href="#about">Our Story</a>
+            </div>
+            </div>
+            <div class="hero__media">
+          <picture>
+            <source srcset="assets/images/hero-car.jpg" />
+            <img src="assets/images/hero-car.svg" alt="Anargya electric race car showcased on stage" />
+          </picture>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about__inner">
+            <div class="about__grid">
+                <div class="about__content">
+                <h2>Engineering the Future of Electric Mobility</h2>
+                <p>
+                    Anargya is the Formula Student electric racing team from Institut Teknologi Sepuluh
+                    Nopember. Since 2018 we have been designing, validating, and assembling competitive
+                    electric race cars that showcase Indonesian engineering on the global stage.
+                </p>
+                <p>
+                    Combining research-led innovation with hands-on craftsmanship, each season we refine
+                    our aerodynamics, chassis, powertrain, and control systems to push performance while
+                    cultivating the next generation of mobility leaders.
+                </p>
+                <ul>
+                    <li>
+                    <strong>40+</strong>
+                    <span>Active members from electrical, mechanical, and business disciplines.</span>
+                    </li>
+                    <li>
+                    <strong>10+</strong>
+                    <span>International awards and recognitions across design and business events.</span>
+                    </li>
+                    <li>
+                    <strong>2018</strong>
+                    <span>Established as the first electric Formula Student team from ITS Indonesia.</span>
+                    </li>
+                </ul>
+                </div>
+                <div class="about__media">
+                <picture>
+                    <source srcset="assets/images/about-team.jpg" />
+                    <img
+                    src="assets/images/about-team-placeholder.svg"
+                    alt="Anargya team members celebrating with their race car"
+                    />
+                </picture>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="models" aria-labelledby="models-title" id="models">
+            <div class="section-header">
+            <h2 id="models-title">Our Race Models</h2>
+            <p class="section-lead">
+                Performance driven electric race cars, pushing technology forward season after season.
+            </p>
+            </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__media">
+              <picture>
+                <source srcset="assets/images/model-2.png" />
+                    <img src="assets/images/model-2.svg" alt="Anargya EV Mark 2.0 car" />
+                </picture>
+                </div>
+                <div class="card__body">
+                <div class="card__heading">
+                    <h3>Mark 2.0</h3>
+                    <span class="card__meta">2020</span>
+                </div>
+                <p>
+                    Designed with improved handling and suspension, Mark 2.0 delivers stability and
+                    ergonomics tailored for drivers above 185 cm, elevating on-track performance.
+                </p>
+                </div>
+                <a class="button button--ghost card__cta" href="#contact">Learn More</a>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                <picture>
+                    <source srcset="assets/images/model-3.png" />
+                    <img src="assets/images/model-3.svg" alt="Anargya EV Mark 3.0 car" />
+                </picture>
+                </div>
+                <div class="card__body">
+                <div class="card__heading">
+                    <h3>Mark 3.0</h3>
+                    <span class="card__meta">2023</span>
+                </div>
+                <p>
+                    Mark 3.0 brings a refined frame and accumulator, engineered for international
+                    competition success and a testament to our pursuit of greatness.
+                </p>
+                </div>
+                <a class="button button--ghost card__cta" href="#contact">Learn More</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="achievements" id="achievements" aria-labelledby="achievements-title">
+        <div class="section-header">
+          <h2 id="achievements-title">Achievements</h2>
+          <p class="section-lead">
+            Highlights from international and national competitions that showcase our progress in electric
+            mobility engineering.
+          </p>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-card">
+            <div class="achievement-card__media">
+              <picture>
+                <source srcset="assets/images/Tim-Anargya-ITS-yang-sukses-meraih-juara-III-cabang-lomba-Presentation-Event-dan-Top-10-untuk-kelas-EV-pada-FSAE-Japan-2024.jpg" />
+                <img
+                  src="assets/images/about-team-placeholder.svg"
+                  alt="Anargya team at Formula SAE Japan podium celebration"
+                />
+              </picture>
+              <span class="achievement-card__badge">2024</span>
+            </div>
+            <div class="achievement-card__body">
+              <h3>Formula SAE Japan</h3>
+              <p>
+                Ranked Top 10 in the Electric Vehicle class and secured 3rd place in the Presentation Event,
+                the best result for an Indonesian electric team.
+              </p>
+            </div>
+          </article>
+          <article class="achievement-card">
+            <div class="achievement-card__media">
+              <picture>
+                <source srcset="assets/images/Tim-Anargya-ITS-usai-dinobatkan-sebagai-juara-I-dalam-ajang-PLN-Innovation.jpg" />
+                <img
+                  src="assets/images/about-team-placeholder.svg"
+                  alt="Anargya members celebrating PLN Innovation competition victory"
+                />
+              </picture>
+              <span class="achievement-card__badge">2022</span>
+            </div>
+            <div class="achievement-card__body">
+              <h3>PLN Innovation & ICT-PEP</h3>
+              <p>
+                Won 1st place with a smart battery management solution, reinforcing Anargya’s expertise in
+                high-performance electric systems.
+              </p>
+            </div>
+          </article>
+          <article class="achievement-card">
+            <div class="achievement-card__media">
+              <picture>
+                <source srcset="assets/images/tim-anargya-its.jpg" />
+                <img
+                  src="assets/images/about-team-placeholder.svg"
+                  alt="Anargya core team members holding team banner outdoors"
+                />
+              </picture>
+              <span class="achievement-card__badge">2019 – Now</span>
+            </div>
+            <div class="achievement-card__body">
+              <h3>Indonesia’s Flagbearer</h3>
+              <p>
+                Consistently representing ITS and Indonesia in Formula Student competitions across Asia,
+                inspiring the local EV innovation ecosystem.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="team" aria-labelledby="team-title" id="team">
+        <div class="section-header">
+          <h2 id="team-title">Our Team</h2>
+          <p class="section-lead">
+            A multidisciplinary team of passionate engineers and professionals advancing racing
+                excellence together.
+            </p>
+            </div>
+            <div class="card-grid card-grid--team">
+            <article class="card card--team">
+                <div class="card__media">
+                <picture>
+                    <source srcset="assets/images/team-electrical.jpg" />
+                    <img src="assets/images/team-electrical.svg" alt="Electrical division working on components" />
+                </picture>
+                </div>
+                <div class="card__body">
+                <h3>Electrical</h3>
+                <p>
+                    Designing and implementing electrical systems, wiring harnesses, and electronic
+                    control units for optimal performance.
+                </p>
+                </div>
+            </article>
+            <article class="card card--team">
+                <div class="card__media">
+                <picture>
+                    <source srcset="assets/images/team-mechanical.jpg" />
+                    <img src="assets/images/team-mechanical.svg" alt="Mechanical division assembling the chassis" />
+                </picture>
+                </div>
+                <div class="card__body">
+                <h3>Mechanical</h3>
+                <p>
+                    Engineering chassis, suspension, powertrain, and aerodynamic components that form
+                    the backbone of our racing machines.
+                </p>
+                </div>
+            </article>
+            <article class="card card--team">
+                <div class="card__media">
+                <picture>
+                    <source srcset="assets/images/team-nontechnical.jpg" />
+                    <img src="assets/images/team-nontechnical.svg" alt="Non-technical division in a meeting" />
+                </picture>
+                </div>
+                <div class="card__body">
+                <h3>Non-Technical</h3>
+                <p>
+                    Managing sponsorships, marketing, logistics, and operations to support our technical
+                    excellence.
+                </p>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <section class="cta" id="contact" aria-labelledby="cta-title">
+            <div class="cta__content">
+            <h2 id="cta-title">Join Our Journey</h2>
+            <p>
+                Be part of our racing legacy. Whether you're exploring sponsorship opportunities or
+                keen to join the team, we’d love to hear from you.
+            </p>
+            </div>
+            <div class="cta__actions">
+            <a class="button button--primary" href="mailto:hello@anargya.com">Get in Touch</a>
+            <a class="button button--outline" href="mailto:partnerships@anargya.com">View Sponsorship Option</a>
+            </div>
+        </section>
+        </main>
+
+    <footer class="footer" aria-labelledby="footer-title">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <picture class="footer__logo">
+            <img src="assets/images/Anargya Blacks.png" alt="Anargya emblem" />
+          </picture>
+          <p>
+            Formula Student racing team from ITS Indonesia, engineering excellence since 2018.
+          </p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__group">
+            <h3 id="footer-title">Quick Links</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#models">Our Models</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+            </ul>
+          </div>
+          <div class="footer__group">
+            <h3>Get Involved</h3>
+            <ul>
+              <li><a href="#team">Join Team</a></li>
+              <li><a href="#contact">Sponsorship</a></li>
+              <li><a href="#contact">Partners</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__group">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/anargya.its/" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/anargya-its-team-electric-fomula/posts/?feedView=all" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://www.youtube.com/@anargyaitsteam1003" target="_blank" rel="noreferrer">YouTube</a></li>
+              <li><a href="mailto:hello@anargya.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2025 Anargya ITS Indonesia. All rights reserved.</p>
+    </footer>
+        <script src="main.js"></script>
+    </body>
+    </html>
