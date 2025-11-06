@@ -201,13 +201,18 @@ section {
 }
 
 .hero {
+  width: 100%;
+  background: var(--color-surface);
+  padding-top: clamp(4rem, 6vw, 6rem);
+}
+
+.hero__inner {
   width: min(100% - 3rem, var(--max-width));
   margin: 0 auto;
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: center;
-  padding-top: clamp(4rem, 6vw, 6rem);
 }
 
 .hero__content h1 {
@@ -590,6 +595,82 @@ h2 {
   color: var(--color-text-muted);
   text-align: center;
   font-size: 0.9rem;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.modal__dialog {
+  position: relative;
+  width: min(560px, calc(100% - 2rem));
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hover);
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.modal__content p {
+  color: var(--color-text-muted);
+}
+
+.link { color: var(--color-primary); }
+
+/* Simple form styles */
+.form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.form__label {
+  font-weight: 600;
+}
+
+.form__input {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(182, 32, 31, 0.12);
+}
+
+.form__submit {
+  margin-top: 0.75rem;
+  width: 100%;
 }
 
 @media (max-width: 960px) {

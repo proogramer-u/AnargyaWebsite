@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Anargya Formula Student</title>
+        <link rel="icon" type="image/png" href="assets/images/Anargya Blacks.png">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -39,6 +40,7 @@
 
         <main>
         <section class="hero" id="hero">
+            <div class="hero__inner">
             <div class="hero__content">
             <p class="eyebrow">Anargya ITS Indonesia</p>
             <h1>Engineering Excellence in Motion</h1>
@@ -53,9 +55,10 @@
             </div>
             <div class="hero__media">
           <picture>
-            <source srcset="assets/images/hero-car.jpg" />
-            <img src="assets/images/hero-car.svg" alt="Anargya electric race car showcased on stage" />
+            <source srcset="assets/images/model-3.png" />
+            <img src="assets/images/model-3.png" alt="" />
           </picture>
+            </div>
             </div>
         </section>
 
@@ -287,8 +290,8 @@
             </p>
             </div>
             <div class="cta__actions">
-            <a class="button button--primary" href="mailto:hello@anargya.com">Get in Touch</a>
-            <a class="button button--outline" href="mailto:partnerships@anargya.com">View Sponsorship Option</a>
+            <button class="button button--primary" id="open-contact">Get in Touch</button>
+            <button class="button button--outline" id="open-sponsorship">View Sponsorship Option</button>
             </div>
         </section>
         </main>
@@ -335,6 +338,44 @@
       </div>
       <p class="footer__copyright">© 2025 Anargya ITS Indonesia. All rights reserved.</p>
     </footer>
+        <!-- Contact Modal -->
+        <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+          <div class="modal__backdrop" data-close-modal></div>
+          <div class="modal__dialog">
+            <button class="modal__close" aria-label="Close dialog" data-close-modal>&times;</button>
+            <h3 id="contact-modal-title">Contact Us</h3>
+            <form class="form" id="contact-form">
+              <label class="form__label" for="contact-name">Name</label>
+              <input class="form__input" id="contact-name" name="name" type="text" placeholder="Your name" required />
+
+              <label class="form__label" for="contact-email">Email</label>
+              <input class="form__input" id="contact-email" name="email" type="email" placeholder="your.email@example.com" required />
+
+              <label class="form__label" for="contact-phone">Telephone Number</label>
+              <input class="form__input" id="contact-phone" name="phone" type="tel" placeholder="Your phone number" />
+
+              <button class="button button--primary form__submit" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sponsorship Modal -->
+        <div class="modal" id="sponsorship-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="sponsorship-modal-title">
+          <div class="modal__backdrop" data-close-modal></div>
+          <div class="modal__dialog">
+            <button class="modal__close" aria-label="Close dialog" data-close-modal>&times;</button>
+            <h3 id="sponsorship-modal-title">Sponsorship Contact</h3>
+            <div class="modal__content">
+              <p><strong>Email</strong><br /><a href="mailto:anargya.its@gmail.com" class="link">anargya.its@gmail.com</a></p>
+              <p><strong>Call Number</strong><br />
+                Salsabilla Jolie (Head of Sponsorship): <a href="tel:+6281231495758" class="link">0812-3149-5758</a><br />
+                Rafi Ahmad (Sponsorship Specialist): <a href="tel:+6287708993805" class="link">0877-0899-3805</a>
+              </p>
+              <p><strong>Address</strong><br />Jl. Teknik Sipil No. 2, Keputih, Kec. Sukolilo, Kota Surabaya, Jawa Timur 60111</p>
+            </div>
+          </div>
+        </div>
+
         <script src="main.js"></script>
     </body>
     </html>
